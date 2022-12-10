@@ -1,0 +1,18 @@
+Problem
+Chef is given two integers AA and CC such that A \leq CA≤C.
+
+Chef wants to find whether there exists any integer BB such that A, B,A,B, and CC are in arithmetic progression.
+
+
+
+Code:
+
+
+T=int(input())
+for i in range(T):
+    A,C=map(int,input().split())
+    B=(A+C)//2
+    if (B-A)==(C-B):
+        print(B)
+    else:
+        print(-1)
